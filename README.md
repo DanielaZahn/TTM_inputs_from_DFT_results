@@ -4,7 +4,7 @@ This code calculates input parameters for a two-temperature model (TTM) or simil
 
 Note that the calculation works only for metals. 
 
-More precisely, the electron-phonon coupling parameter, the electron heat capacity and the phonon heat capacity are calculated. 
+More precisely, the electron-phonon coupling parameter (G_ep), the electron heat capacity and the phonon heat capacity are calculated. 
 The electron-phonon coupling parameter is calculated as in Waldecker et al., Phys. Rev. X 6, 021003 (https://doi.org/10.1103/PhysRevX.6.021003).
 
 The required DFT results are: electron density of states, phonon density of states, Fermi energy, and Eliashberg function. 
@@ -23,4 +23,4 @@ To calculate TTM input parameters for your material, follow these four simple st
 Additional notes:
 
 - As an alternative to the jupyter notebooks, also a python script version of the main scripts is included ("main_spin_resolved.py" and "main_not_spin_resolved.py"). 
-- It is also possible to calculate only the heat capacities and not $G_\mathrm{ep}$, e.g. if you want to fit $G_\mathrm{ep}$ in your TTM. In this case, the Eliashberg function is not required. Simply don't run the cell that calculates $G_\mathrm{ep}$ in the jupyter notebook  / comment out the part of the code that calculates $G_\mathrm{ep}$ in the python script version. 
+- It is also possible to calculate only the heat capacities and not G_ep, e.g. if you want to fit G_ep in your TTM. In this case, the Eliashberg function is not required. Simply don't run the cell that calculates G_ep in the jupyter notebook  / comment out the part of the code that calculates G_ep in the python script version. 
