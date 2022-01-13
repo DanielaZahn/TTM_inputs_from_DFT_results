@@ -16,7 +16,7 @@ To calculate TTM input parameters for your material, follow these four simple st
 
 1) Copy your DFT results to the folder "inputs".
 2) Write a python script that reads the DFT results and save this script in the folder "load_inputs". The name of the script needs to be the material name plus "_spin_resolved.py" or "_not_spin_resolved.py". Follow the examples provided in "load_inputs" for iron, cobalt, and nickel. Note that all variable names have to be the same as in the examples.
-3) Change the file "config.cfg" such that the material specified there is your material. In addition, you can change other settings like lattice temperature (for calculation of $G_\mathrm{ep}$) and the temperature range for which you would like the TTM inputs. 
+3) Change the file "config.cfg" such that the material specified there is your material. In addition, you can change other settings like lattice temperature (for calculation of G_ep) and the temperature range for which you would like the TTM inputs. 
 4) Run the jupyter notebook "main_spin_resolved.ipynb" or "main_not_spin_resolved.ipynb", depending on which case applies for your DFT calculation. The results will be saved in the folder "results".
 
 
